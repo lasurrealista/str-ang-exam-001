@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { HeroesComponent } from './page/heroes/heroes.component';
+import { FilterByNamePipe } from './pipe/filter-by-name.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    HeroesComponent
+    HeroesComponent,
+    FilterByNamePipe,
   ],
   imports: [
     BrowserModule,
