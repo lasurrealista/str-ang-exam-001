@@ -1,0 +1,9 @@
+@use '../../../assets/modules/colors'as *;
+
+.container-fluid {
+  background-color: $primary-color;
+}
+
+th {
+  color: $secondary-color;
+}
