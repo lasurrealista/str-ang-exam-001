@@ -5,7 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterByNamePipe implements PipeTransform {
 
-  transform(list: any[], phrase: string): any[] {
+  transform(list: any[] | null, phrase: string): any[] {
+
+    if (list == null) {
+      return [];
+    }
 
     if (!Array.isArray(list) || !phrase) {
       return list;
