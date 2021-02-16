@@ -27,5 +27,9 @@ export class HeroesComponent implements OnInit {
     this.phrase = (event.target as HTMLInputElement).value;
   }
 
+  columnKey: string = '';
 
+  onColumnSelect(key: string): void {
+    this.columnKey = key;
+  }
 }

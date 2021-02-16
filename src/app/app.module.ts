@@ -7,6 +7,7 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { HomeComponent } from './page/home/home.component';
 import { HeroesComponent } from './page/heroes/heroes.component';
 import { FilterByNamePipe } from './pipe/filter-by-name.pipe';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FilterByNamePipe } from './pipe/filter-by-name.pipe';
     HomeComponent,
     HeroesComponent,
     FilterByNamePipe,
+    SorterPipe,
   ],
   imports: [
     BrowserModule,
