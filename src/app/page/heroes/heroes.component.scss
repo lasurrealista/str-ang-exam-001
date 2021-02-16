@@ -7,8 +7,18 @@
 
 th {
   color: $secondary-color;
+  user-select: none;
+
+  &:hover {
+    color: $clickme;
+  }
 }
 
-.btn-search:hover {
-  color: $primary-color;
+.btn-search {
+  user-select: none;
+
+  &:hover {
+    color: $clickme;
+  }
 }
+
